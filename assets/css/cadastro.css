@@ -1,0 +1,155 @@
+:root{
+    --header-color: #A8DADC;
+    --primary--blue-color: #1D3557;
+    --secondary-blue-color: #457B9D;
+    --primary-white-color: #F1FAEE;
+    --hover-color: #E63946;
+    --reset: 0;
+    --font-title: 'Zeyada', cursive;
+    --font-sansita: 'Sansita', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-color);
+    padding: 1% 0;
+}
+.navbarBrand{
+    margin: 0 5%;
+}
+.navbarList{
+    display: flex;
+    list-style: none;
+}
+.navbar{
+    margin: 0 10%;
+}
+.navItem{
+    padding: 0 2%;
+}
+.navItem a{
+    text-decoration: none;
+    color: var(--primary--blue-color);
+    border-bottom: solid 2px var(--hover-color);
+}
+.navItem a:hover{
+    border-bottom: solid 2px black;
+    transition: 200ms;
+}
+
+.cartao{
+    background-color: var(--header-color);
+}
+
+.footer{
+    background-color: #1D3557;
+    color: var(--primary-white-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navItemFooter{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.navbarlistFooter{
+    margin: 0;
+    padding: 0;
+}
+.navLinkFooter{
+    width: fit-content;
+    text-decoration: none;
+    color: #F1FAEE;
+    border-bottom: solid 2px #F1FAEE;
+    font-size: 90%;
+}
+.navLinkFooter:hover{
+    border-bottom: solid 2px #E63946;
+    transition: 200ms;
+}
+.navbarFooter{
+    margin-top: 20%;
+    margin-bottom: 40%;
+}
+
+.menuFooter{
+    margin-top: 2%;
+}
+.contactFooter{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+}
+.contactFooter img{
+    width: 20%;
+    padding: 20% 1% 0 1%;
+}
+.adressFooter{
+    margin-top: 2%;
+}
+.searchFooter{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+}
+#filterMenuFooter{
+    width: 100%;
+    margin-top: 9%;
+    margin-bottom: 9%;
+}
+
+@media screen and (max-width: 800px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbarListFooter{
+        display: flex;
+        text-align: center;
+    }
+    #menuFooter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 4%;
+    }
+    .navbarFooter{
+        margin: 0;
+    }
+    .navItemFooter{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #filterMenuFooter{
+        margin: 0 0 10% 0;
+        width: 25%;
+    }
+    .searchFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactFooter img{
+        padding: 0;
+        width: 3vh;
+        margin: 3vh;
+    }
+    #filterMenuFooter{
+        width: 50%;
+    }
+  }

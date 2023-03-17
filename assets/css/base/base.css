@@ -1,0 +1,146 @@
+@import url(_reset.css);
+@import url(./_variaveis.css);
+
+body {
+	font-family: var(--fonte-familia-corpo);
+	overflow-x: hidden;
+}
+
+.container { 
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex--centro {
+	align-items: center;
+	justify-content: center;
+}
+
+.flex--coluna {
+	flex-direction: column;
+}
+
+@media(min-width: 1200px) {
+	.container {
+		padding-left: calc((100vw - 900px)/2);
+		padding-right: calc((100vw - 900px)/2);
+	}
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+		padding-right: 2.5rem;
+		padding-left: 2.5rem;	
+	}
+    .header {
+      display: flex;
+      flex-direction: column;
+    }
+    .navbarBrand{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    .navbarList{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2%;
+        padding-bottom: 2%;
+        padding-left: 0;
+    }
+    .navItem{
+        margin-bottom: 30%;
+    }
+
+    .menu{
+        align-items: center;
+        margin: 0 5%;
+    }
+    .filterButtons{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2%;
+    }
+    .filterButtons input{
+        margin-bottom: 10%;
+    }
+    #filterMenu{
+        width: 50%;
+    }
+    .contentMenu img{
+        width: 300px;
+        height: auto;
+    }
+    .titleBlog{
+        color: #1D3557;
+    }
+    .imagesBlog{
+        display: flex;
+        flex-direction: row ;
+    }
+    .principal{
+        width: 100%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbarListFooter{
+        display: flex;
+        text-align: center;
+    }
+    #menuFooter{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-bottom: 4%;
+    }
+    .navbarFooter{
+        margin: 0;
+    }
+    .navItemFooter{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    #filterMenuFooter{
+        margin: 0 0 10% 0;
+        width: 25%;
+    }
+    .searchFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactFooter img{
+        padding: 0;
+        width: 3vh;
+        margin: 3vh;
+    }
+    #filterMenuFooter{
+        width: 50%;
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagesBlog{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagesBlog img{
+        width: 90vw;
+        margin: 2% 0;
+    }
+  }
