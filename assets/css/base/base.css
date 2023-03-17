@@ -6,6 +6,14 @@ body {
 	overflow-x: hidden;
 }
 
+h3{
+    width: 100%;
+    font-size: 3em;
+    padding: 20% 0;
+    font-family: var(--font-title);
+    color: #1D3557;
+}
+
 .container { 
 	padding-right: 1rem;
 	padding-left: 1rem;
